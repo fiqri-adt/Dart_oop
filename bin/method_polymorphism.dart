@@ -11,13 +11,12 @@ class VicePresident extends Manager {
   VicePresident(String name) : super(name);
 }
 
+void sayHello(Employee employee) {
+  print('Hello ${employee.name}');
+}
+
 void main() {
-  Employee employee = Employee('Adit');
-  print(employee);
-
-  employee = Manager('Fikri');
-  print(employee);
-
-  employee = VicePresident('Firdaus');
-  print(employee);
+  sayHello(Employee('Adit'));
+  sayHello(Manager('Fiqri'));
+  sayHello(VicePresident('Firdaus'));
 }
